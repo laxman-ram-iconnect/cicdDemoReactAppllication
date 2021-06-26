@@ -7,6 +7,8 @@ echo 'correctly bundles React in production mode and optimizes the build for'
 echo 'the best performance.'
 set -x
 npm run build
+def workspace = WORKSPACE
+echo "Current workspace is ${env.WORKSPACE} ... ${workspace}"
 set +x
 
 echo 'The following "npm" command runs your Node.js/React application in'
