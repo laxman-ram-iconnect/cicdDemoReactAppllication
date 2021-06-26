@@ -10,7 +10,7 @@ npm run build
 echo "Current workspace is ${pwd} ${WORKSPACE}"
 sleep 1
 
-cp -a /${WORKSPACE}/build/. /var/www/reactapp
+sudo cp -r ${WORKSPACE}/build/. /var/www/reactapp
 set +x
 
 echo 'The following "npm" command runs your Node.js/React application in'
