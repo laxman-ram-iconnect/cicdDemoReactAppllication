@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Building') {
             steps {
                 sh 'npm install'
             }
@@ -11,7 +11,7 @@ pipeline {
                 sh './jenkins/scripts/test.sh'
             }
         }
-        stage('Deliver') {
+        stage('Deploy') {
             steps {
                 input message: 'Do you want to continue? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/deliver.sh'
