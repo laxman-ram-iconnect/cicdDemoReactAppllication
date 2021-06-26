@@ -40,6 +40,10 @@ function App() {
           <label for="email">Email</label>
           <input id="email" onChange={event => setEmail(event.target.value)} value={email}/>
         </div>
+        <div>
+          <label for="email">Information</label>
+          <input type="text" onChange={event => setEmail(event.target.value)} value={email}/>
+        </div>
         <button onClick={addRecords}>
           Submit
         </button>
