@@ -32,9 +32,9 @@ jobs:
       - name: Test 1 INSTALLING
         run: npm install
       - name: Test 2 TESTING
-        run: ../jenkins/scripts/test.sh
+        run: npm test
       - name: Test 3 BUILDING
-        run: ../jenkins/scripts/deliver.sh
+        run: npm run build
 
       - name: Finishing...
         run: echo TestPassed
