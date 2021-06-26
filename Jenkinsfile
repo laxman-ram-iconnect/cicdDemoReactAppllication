@@ -13,9 +13,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
                 input message: 'Do you want to continue? (Click "Proceed" to continue)'
-                sh './jenkins/scripts/kill.sh'
+                sh './jenkins/scripts/deliver.sh'
             }
         }
     }
