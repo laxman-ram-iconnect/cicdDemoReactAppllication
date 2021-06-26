@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.main-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.header {
+  grid-column: 1 / span 2;
+  padding: 20px 0px;
+  text-align: center;
+  background: blue;
+  font-size: 26px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+}
+
+td {
+  text-align: center;
+}
+
+label {
+  margin-right: 10px;
+}
+
+table {
+  height: min-content;
+}
